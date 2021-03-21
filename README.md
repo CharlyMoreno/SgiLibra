@@ -2,7 +2,7 @@
 
 Página web frontend para SGI LIBRA, Sistemas de gestión integral.
 
-##Lenguajes
+## Lenguajes
 
 Desarrollada en HTML,CSS,JS. Utilizamos el framework de Boostrap.
 
