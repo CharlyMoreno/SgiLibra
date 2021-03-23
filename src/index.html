@@ -13,32 +13,39 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <img class="logo" src="img/logo-blanco.png" alt="SgiLibra">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#miLista">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="miLista">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container milista">
+            <img class="logo" src="../src/img/logo-horizontal-blanco-modificado.png" alt="SgiLibra">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#miLista" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="miLista"> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contacto" href="#"><p class=" nav-item__contacto">Contacto</p></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-  </nav>
-    
-  <!-- JS Files -->
-  <script src="js/Bootstrap/bootstrap.js"></script>
+      </nav>
+        
+      <!-- JS Files -->
+      <script src="js/Bootstrap/bootstrap.js"></script>
+  </header>
 </body>
 </html>

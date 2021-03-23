@@ -2,3 +2,39 @@
 .logo {
     width: 150px;
 }
+nav{
+    height: 85px;
+}
+.milista{
+    background-color: #212529;
+}
+.navbar-nav{
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    margin-left: 25px;
+}
+
+nav .nav-item__contacto{
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 60px ;
+    margin-right: 10px;  
+    padding: 5px 25px; 
+    color: #212529 !important;
+    background-color: #e7e7ed;
+    border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+    .nav-link{
+        margin-left: 0;
+    }
+    nav .nav-item__contacto{
+        margin: 0;
+    }
+    .d-flex .justify-content-end{
+        justify-content: center;
+    }
+    }
