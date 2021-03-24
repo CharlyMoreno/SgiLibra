@@ -1,3 +1,7 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
 /* NAVBAR */
 .logo {
     width: 150px;
@@ -37,4 +41,38 @@ nav .nav-item__contacto{
     .d-flex .justify-content-end{
         justify-content: center;
     }
-    }
+}
+
+/* gif-background */
+.gif-background {
+    background-image: linear-gradient(90deg, rgba(0,93,78,0.7203256302521008) 0%, rgba(0,73,73,0.6867121848739496) 35%, rgba(1,80,80,0.6979166666666667) 100%),url('../img/gif-coder.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 300px;
+    position: relative;
+}
+
+.contents{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-animation{
+    width: 300px;
+}
+
+.texto{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.white-button{
+    border-style: solid;
+    border: 15px;
+    border-color: white;
+    color: white;
+    background: none;
+}
