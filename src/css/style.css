@@ -1,5 +1,5 @@
 * {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* NAVBAR */
@@ -9,8 +9,26 @@
 nav{
     height: 85px;
 }
-.milista{
-    background-color: #212529;
+
+.navbar{
+    transition: 0.5s;
+}
+
+.bg-dark{
+    transition: 0.5s;
+}
+.collapse .bg-dark{
+    transition: 0.7s;
+}
+
+.test{
+    background-color: brown;
+}
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 .navbar-nav{
     align-self: flex-end;
@@ -18,6 +36,7 @@ nav{
     align-items: center;
 }
 .nav-link{
+    font-weight: bold;
     margin-left: 25px;
 }
 
@@ -31,7 +50,10 @@ nav .nav-item__contacto{
     background-color: #e7e7ed;
     border-radius: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
+    .mobile-bg{
+        background-color: black;
+    }
     .nav-link{
         margin-left: 0;
     }
@@ -44,35 +66,56 @@ nav .nav-item__contacto{
 }
 
 /* gif-background */
+.space-navbar{
+    height: 85px;
+}
 .gif-background {
-    background-image: linear-gradient(90deg, rgba(0,93,78,0.7203256302521008) 0%, rgba(0,73,73,0.6867121848739496) 35%, rgba(1,80,80,0.6979166666666667) 100%),url('../img/gif-coder.gif');
+    background-image: linear-gradient( -45deg,  rgba(96,221,142,0.7) 8.7%, rgba(24,138,141,0.7) 88.1% ),url('../img/gif-coder.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-    height: 300px;
+    height: 500px;
     position: relative;
+    
 }
 
-.contents{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.button-white {
+    background: none;
+    border-style: solid;
+    border-width:2px;
+    border-color: white;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    border-radius:50px;
+    text-decoration:none;
+}
+.button-white:hover {
+    background-color: white;
+    color: black;
 }
 
-.logo-animation{
-    width: 300px;
+.logo-animation img{
+    width: 250px;
 }
 
-.texto{
+.primary-text{
     color:white;
     font-weight: bold;
     font-size: 30px;
 }
 
-.white-button{
-    border-style: solid;
-    border: 15px;
-    border-color: white;
+.description{
     color: white;
-    background: none;
+}
+
+.wave-white {
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.wave-white img {
+    width: 100%;
 }
