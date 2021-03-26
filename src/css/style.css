@@ -1,5 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 /* NAVBAR */
@@ -107,6 +108,11 @@ nav .nav-item__contacto{
 
 .description{
     color: white;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.top__logo-SGI-vert{
+    margin-left: 265px;
 }
 
 .wave-white {
@@ -118,4 +124,66 @@ nav .nav-item__contacto{
 }
 .wave-white img {
     width: 100%;
+}
+.system-caracteristics{
+    text-align: center;
+}
+.system-caracteristics h2{
+    font-weight: bold;
+    margin-bottom: 50px;
+
+}
+.system-caracteristics__card{
+    display: inline-block;
+    width: 100%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    /* height: 225px; */
+    margin: 10px;
+    padding: 15px 15px 0px 15px;
+    text-align: left;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    color: white;
+    border-bottom: solid 6px black;
+    
+}
+.system-caracteristics__card:hover{
+    --angle: 0deg;
+  border-image: linear-gradient(var(--angle),  #378889,#5cb388) 1;  /*  GRADIENT ORIGINAL 
+  
+  border-bottom: solid 6px black;
+  border-image-outset: 0;
+   /* border-image: linear-gradient(var(--angle),  #ff3232,#6441ff) 1; */
+  animation: 1s rotate linear infinite;
+  transition: 10s;
+}
+/* ANIMACION DEL GRADIENT */
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  /* FIN ANIMACION DEL GRADIENT */
+.impresora{
+    background-image: url("../img/Impresora-vector.jpg");
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.caracteristics--card-title{
+    font-weight: bold;
+    letter-spacing: 1.2px;
 }
