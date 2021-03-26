@@ -116,7 +116,7 @@ nav .nav-item__contacto{
 }
 
 .wave-white {
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
     position: absolute;
     right: 0;
@@ -125,29 +125,45 @@ nav .nav-item__contacto{
 .wave-white img {
     width: 100%;
 }
+
+/*Fade Animation*/
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* Fin Fade Animation*/
+
+/* System Caracteristics */
+
 .system-caracteristics{
     text-align: center;
 }
 .system-caracteristics h2{
     font-weight: bold;
-    margin-bottom: 50px;
 
 }
 .system-caracteristics__card{
     display: inline-block;
-    width: 100%;
-    min-width: 288px;
-    max-width: 400px;
-    min-height: 150px;
-    /* height: 225px; */
+    text-align: center;
     margin: 10px;
-    padding: 15px 15px 0px 15px;
-    text-align: left;
-    background-color: black;
+    background-color: #F9F9F9;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgb(0, 0, 0);
-    color: white;
-    border-bottom: solid 6px black;
+    /**/
+    color: black;
+    font-size: 15px;
+    border-bottom: solid 6px #F9F9F9;
     
 }
 .system-caracteristics__card:hover{
@@ -159,6 +175,7 @@ nav .nav-item__contacto{
    /* border-image: linear-gradient(var(--angle),  #ff3232,#6441ff) 1; */
   animation: 1s rotate linear infinite;
   transition: 10s;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 /* ANIMACION DEL GRADIENT */
 @keyframes rotate {
@@ -173,16 +190,17 @@ nav .nav-item__contacto{
     inherits: false;
   }
   /* FIN ANIMACION DEL GRADIENT */
-.impresora{
-    background-image: url("../img/Impresora-vector.jpg");
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+.system-caracteristics i{  
+    font-size: 35px;
     margin-bottom: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no repeat;
+    background: linear-gradient( -45deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
+
 .caracteristics--card-title{
     font-weight: bold;
     letter-spacing: 1.2px;
