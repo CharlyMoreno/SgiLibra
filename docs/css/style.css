@@ -145,6 +145,53 @@ nav .nav-item__contacto{
 }
 /* Fin Fade Animation*/
 
+
+/* Servers */
+
+.servers h2{
+    font-weight: bold;
+    text-align: center;
+}
+.servers p{
+    text-align: center;
+}
+
+#accordion .panel {
+    border: 0;
+    border-radius: 0;
+    margin: 0 0 25px 0;
+    position: relative
+}
+
+#accordion .panel:before {
+    content: "";
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background: linear-gradient( -45deg,  rgba(96,221,142,1) 8.7%, rgba(24,138,141,1) 88.1% );
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    background: #f9f9f9;
+    position: relative
+}
+
+#accordion .panel-body {
+    padding: 10px 15px 10px;
+    border: 0;
+    background: #f9f9f9;
+    border-top: 1px solid #fff;
+}
+.accordion-button:not(.collapsed) {
+    font-weight: bold;
+    color:rgba(24,138,141,1);
+    background-color: rgba(96,221,142,0.15);
+}
+
+
 /* System Caracteristics */
 
 .system-caracteristics{
@@ -209,3 +256,4 @@ nav .nav-item__contacto{
 .EspacioBlanco{
     height: 150px;
 }
+
