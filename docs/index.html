@@ -94,37 +94,135 @@
         </div>
       </div>
 
+      
       <section class="system-caracteristics py-5">
           <h2>CARACTERISTICAS DEL SISTEMA</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, perferendis!</p>
           <div class="container">
+            
               <div class="row py-3 justify-content-center align-middle">
-                  <div class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
+                  <div id="myBtn-Modular" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-cubes"></i>
                     <p class="caracteristics--card-title">ESQUEMA MODULAR</p>
                   </div>
-
-                  <div class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
+                 
+                  <div id="myBtn-Controladores" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-printer"></i>
                     <p class="caracteristics--card-title">IMPRESIÓN SOBRE CRONTROLADORES FISCALES</p>
+                    
                   </div>
 
-                  <div class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
+                  <div id="myBtn-Codigo" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-barcode"></i>
-                    <p class="caracteristics--card-title">MANEJO DE CÓDIGO DE BARRAS</p>                  
+                    <p class="caracteristics--card-title">MANEJO DE CÓDIGO DE BARRAS</p>       
                   </div>
 
-                  <div class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
+                  <div id="myBtn-Facturas" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-ui-copy"></i>
-                    <p class="caracteristics--card-title">GENERACION DE FACTURAS ELECTRÓNICAS</p>                   
+                    <p class="caracteristics--card-title">GENERACION DE FACTURAS ELECTRÓNICAS</p>   
                   </div>
               </div>
           </div>
             <div class="EspacioBlanco"></div>
       </section>
-  </main>
+       <!-- Empieza LOS pop up -->
 
+       <!-- POP UP MODULAR -->
+       <div id="myModal-Modular" class="modal modalModular">
+                  
+        <div class="modal-content">
+            <div class="modal-header">
+                
+                <h2>Esquema Modular</h2>
+                <span class="close-modular">&times;</span>
+              </div>
+              <div class="row modal-body">
+                <div class="col col-lg-3 col-sm-12">
+                  <div class="img-popup img-Modular"></div>
+                </div>
+                <div class="col col-lg-9 col-sm-12 py-3">
+                  <p>
+                    El sistema tiene un esquema modular, pudiendo adquirirse él o los módulos más necesarios en una primera instalación y luego incorporar los módulos que crea conveniente para el mejor manejo de la información de su negocio o empresa.
+  
+                    Ayuda a equilibrar los costos de implementación.</p>
+                </div>
+              </div> 
+              <div class="modal-footer">
+              </div>
+            </div>
+        </div>
+          
+        <!--   POP UP DE CONTROLADORES  -->
+        <div id="myModal-Controladores" class="modal modalControladores">
+                  
+          <div class="modal-content">
+              <div class="modal-header">
+                  
+                  <h2>IMPRESIÓN SOBRE CONTROLADORES FISCALES</h2>
+                  <span class="close-Controladores">&times;</span>
+                </div>
+                <div class="row modal-body">
+                  <div class="col col-lg-3 col-sm-12">
+                    <div class="img-popup img-Controladores"></div>
+                  </div>
+                  <div class="col col-lg-9 col-sm-12 py-3">
+                    <p>Se adapta a los distintos modelos de impresoras, permitiendo generar tickets como así también informes X y informes Z.</p>
+                  </div>
+                </div> 
+                <div class="modal-footer">
+                </div>
+              </div>
+          </div>
+        
+        <!--  POP UP DE CODIGO DE BARRAS -->
+        <div id="myModal-Codigo" class="modal modalCodigo">
+                  
+          <div class="modal-content">
+              <div class="modal-header">
+                  
+                  <h2>MANEJO DE CÓDIGO DE BARRAS</h2>
+                  <span class="close-codigo">&times;</span>
+                </div>
+                <div class="row modal-body">
+                  <div class="col col-lg-3 col-sm-12">
+                    <div class="img-popup img-Codigo"></div>
+                  </div>
+                  <div class="col col-lg-9 col-sm-12 py-3">
+                    <p>El Sistema prevee el ingreso de datos con lectores de código de barras, como la generación e impresión de etiquetas con los mismos en distintos formatos según los requerimientos del cliente.</p>
+                  </div>
+                </div> 
+                <div class="modal-footer">
+                </div>
+              </div>
+          </div>
+
+          <!-- POP UP FACTURAS -->
+          <div id="myModal-Facturas" class="modal modalFacturas">
+                  
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>GENERACION DE FACTURAS ELECTRÓNICAS</h2>
+                    <span class="close-facturas">&times;</span>
+                  </div>
+                  <div class="row modal-body">
+                    <div class="col col-lg-3 col-sm-12">
+                      <div class="img-popup img-Facturas"></div>
+                    </div>
+                    <div class="col col-lg-9 col-sm-12 py-3">
+                      <p>El módulo de facturación de clientes, al momento de generar el compronante se conecta en forma transparente para el usuario a los webservices de AFIP automáticamente, obteniendo CAE,   fecha de vencimiento del CAE y número de comprobante correspondiente.</p>
+                    </div>
+                  </div> 
+                  <div class="modal-footer">
+                  </div>
+                </div>
+            </div>
+
+    </div>
+
+
+  </main>
     <!-- JS Files -->
+    <script src="js/popup.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/Bootstrap/bootstrap.js"></script>
     <script src="js/index.js"></script>
