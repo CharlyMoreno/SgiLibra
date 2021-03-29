@@ -4,11 +4,9 @@ var minPoint = 991;
 jQuery(function ($) {
     $(window).scroll(function(){
         if ($(this).scrollTop() > 50 && width > minPoint) {
-            $('.navbar').addClass('bg-dark');
-            $('.collapse').addClass('bg-dark');         
+            $('.navbar').addClass('bg-dark');        
         } else {
-            $('.navbar').removeClass('bg-dark');
-            $('.collapse').removeClass('bg-dark');                   
+            $('.navbar').removeClass('bg-dark');               
         }
     });
 });
