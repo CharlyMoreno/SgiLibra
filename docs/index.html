@@ -104,29 +104,22 @@
                   <div id="myBtn-Modular" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-cubes"></i>
                     <p class="caracteristics--card-title">ESQUEMA MODULAR</p>
-
-                      
-                      <!-- <button id="myBtn-Modular" class="popup-btn">Más detalles</button> -->
-              
-                 
                   </div>
-                  
+                 
                   <div id="myBtn-Controladores" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-printer"></i>
                     <p class="caracteristics--card-title">IMPRESIÓN SOBRE CRONTROLADORES FISCALES</p>
-                    <!-- <button id="myBtn-Controladores" class="popup-btn">Más detalles</button> -->
+                    
                   </div>
 
                   <div id="myBtn-Codigo" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-barcode"></i>
                     <p class="caracteristics--card-title">MANEJO DE CÓDIGO DE BARRAS</p>       
-                    <!-- <button id="myBtn-Codigo" class="popup-btn">Más detalles</button>            -->
                   </div>
 
                   <div id="myBtn-Facturas" class="col-lg-2 col-md-6 col-sm-12 system-caracteristics__card py-3">
                     <i class="icofont-ui-copy"></i>
                     <p class="caracteristics--card-title">GENERACION DE FACTURAS ELECTRÓNICAS</p>   
-                    <!-- <button id="myBtn-Facturas" class="popup-btn">Más detalles</button>                 -->
                   </div>
               </div>
           </div>
@@ -143,12 +136,16 @@
                 <h2>Esquema Modular</h2>
                 <span class="close-modular">&times;</span>
               </div>
-              <div class="modal-body">
-                <div class="img-popup img-Modular"></div>
-                <p>
-                  El sistema tiene un esquema modular, pudiendo adquirirse él o los módulos más necesarios en una primera instalación y luego incorporar los módulos que crea conveniente para el mejor manejo de la información de su negocio o empresa.
-
-                  Ayuda a equilibrar los costos de implementación.</p>
+              <div class="row modal-body">
+                <div class="col col-lg-3 col-sm-12">
+                  <div class="img-popup img-Modular"></div>
+                </div>
+                <div class="col col-lg-9 col-sm-12 py-3">
+                  <p>
+                    El sistema tiene un esquema modular, pudiendo adquirirse él o los módulos más necesarios en una primera instalación y luego incorporar los módulos que crea conveniente para el mejor manejo de la información de su negocio o empresa.
+  
+                    Ayuda a equilibrar los costos de implementación.</p>
+                </div>
               </div> 
               <div class="modal-footer">
               </div>
@@ -164,10 +161,13 @@
                   <h2>IMPRESIÓN SOBRE CONTROLADORES FISCALES</h2>
                   <span class="close-Controladores">&times;</span>
                 </div>
-                <div class="modal-body">
-                  <span class="img-popup img-Controladores"></span>
-                  <p>
-                    Se adapta a los distintos modelos de impresoras, permitiendo generar tickets como así también informes X y informes Z.</p>
+                <div class="row modal-body">
+                  <div class="col col-lg-3 col-sm-12">
+                    <div class="img-popup img-Controladores"></div>
+                  </div>
+                  <div class="col col-lg-9 col-sm-12 py-3">
+                    <p>Se adapta a los distintos modelos de impresoras, permitiendo generar tickets como así también informes X y informes Z.</p>
+                  </div>
                 </div> 
                 <div class="modal-footer">
                 </div>
@@ -183,10 +183,13 @@
                   <h2>MANEJO DE CÓDIGO DE BARRAS</h2>
                   <span class="close-codigo">&times;</span>
                 </div>
-                <div class="modal-body">
-                  <span class="img-popup img-Codigo"></span>
-                  <p>
-                    El Sistema prevee el ingreso de datos con lectores de código de barras, como la generación e impresión de etiquetas con los mismos en distintos formatos según los requerimientos del cliente.</p>
+                <div class="row modal-body">
+                  <div class="col col-lg-3 col-sm-12">
+                    <div class="img-popup img-Codigo"></div>
+                  </div>
+                  <div class="col col-lg-9 col-sm-12 py-3">
+                    <p>El Sistema prevee el ingreso de datos con lectores de código de barras, como la generación e impresión de etiquetas con los mismos en distintos formatos según los requerimientos del cliente.</p>
+                  </div>
                 </div> 
                 <div class="modal-footer">
                 </div>
@@ -198,16 +201,16 @@
                   
             <div class="modal-content">
                 <div class="modal-header">
-                    
-                    <h2>Esquema Modular</h2>
+                    <h2>GENERACION DE FACTURAS ELECTRÓNICAS</h2>
                     <span class="close-facturas">&times;</span>
                   </div>
-                  <div class="modal-body">
-                    <span class="img-popup img-Facturas"></span>
-                    <p>
-                      El sistema tiene un esquema modular, pudiendo adquirirse él o los módulos más necesarios en una primera instalación y luego incorporar los módulos que crea conveniente para el mejor manejo de la información de su negocio o empresa.
-    
-                      Ayuda a equilibrar los costos de implementación.</p>
+                  <div class="row modal-body">
+                    <div class="col col-lg-3 col-sm-12">
+                      <div class="img-popup img-Facturas"></div>
+                    </div>
+                    <div class="col col-lg-9 col-sm-12 py-3">
+                      <p>El módulo de facturación de clientes, al momento de generar el compronante se conecta en forma transparente para el usuario a los webservices de AFIP automáticamente, obteniendo CAE,   fecha de vencimiento del CAE y número de comprobante correspondiente.</p>
+                    </div>
                   </div> 
                   <div class="modal-footer">
                   </div>
@@ -218,123 +221,8 @@
 
 
   </main>
-
-    
-    <!-- JS del Popup -->
-       
-    <!-- Modulares -->
-    <script>
-      // Get the modal
-        var modalModular = document.getElementById("myModal-Modular");
-        
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn-Modular");
-        
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close-modular")[0];
-        
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-        modalModular.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modalModular.style.display = "none";
-}
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modalModular) {
-          modalModular.style.display = "none";
-        }
-        }
-    </script>
-    <!-- Controladores -->
-    <script>
-      var modalControladores = document.getElementById("myModal-Controladores");
-      var btn = document.getElementById("myBtn-Controladores");
-      
-
-        // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close-Controladores")[0];
-        
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-          modalControladores.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modalControladores.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modalControladores) {
-          modalControladores.style.display = "none";
-        }
-        }
-    </script>
-    <!-- Codigo de barras -->
-    <script>
-    var modalCodigo = document.getElementById("myModal-Codigo");
-    var btn = document.getElementById("myBtn-Codigo");
-    
-
-      // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close-codigo")[0];
-      
-      // When the user clicks on the button, open the modal
-      btn.onclick = function() {
-        modalCodigo.style.display = "block";
-      }
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        modalCodigo.style.display = "none";
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-          if (event.target == modalCodigo) {
-            modalCodigo.style.display = "none";
-          }
-        }
-    </script>
-    <!-- Facturas electronicas -->
-    <script>
-      // Get the modal
-        var modalFacturas = document.getElementById("myModal-Facturas");
-        
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn-Facturas");
-        
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close-facturas")[0];
-        
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-          modalFacturas.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modalFacturas.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modalFacturas) {
-            modalFacturas.style.display = "none";
-          }
-        }
-    </script>
     <!-- JS Files -->
+    <script src="js/popup.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/Bootstrap/bootstrap.js"></script>
     <script src="js/index.js"></script>

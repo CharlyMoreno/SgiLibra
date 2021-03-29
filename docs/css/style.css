@@ -254,9 +254,6 @@ nav .nav-item__contacto{
       line-height: 1.3rem;
       align-items: center;
     }
-    .modal-body p{
-        width: calc(100% - 120px);
-    }
     .modal-body .img-popup{
        
         width: 100px;
