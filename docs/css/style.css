@@ -166,6 +166,7 @@ nav .nav-item__contacto{
     border-bottom: solid 6px #F9F9F9;
     
 }
+
 .system-caracteristics__card:hover{
     --angle: 0deg;
   border-image: linear-gradient(var(--angle),  #378889,#5cb388) 1;  /*  GRADIENT ORIGINAL 
@@ -174,8 +175,9 @@ nav .nav-item__contacto{
   border-image-outset: 0;
    /* border-image: linear-gradient(var(--angle),  #ff3232,#6441ff) 1; */
   animation: 1s rotate linear infinite;
-  transition: 10s;
+  transition: 1s;
   box-shadow: 0 4px 8px rgb(0, 0, 0);
+  cursor:pointer;
 }
 /* ANIMACION DEL GRADIENT */
 @keyframes rotate {
@@ -209,3 +211,134 @@ nav .nav-item__contacto{
 .EspacioBlanco{
     height: 150px;
 }
+
+ /* -- ESTILOS DEL POP UP-- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.493); /* Black w/ opacity */
+    border-radius: 0px;
+    
+  }
+  
+  
+.modal-header {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
+    color: black;
+    border-radius: 0px;
+    text-align: center;
+    padding: 10px 16px;
+    margin-bottom: 14px;
+    border-bottom: none;
+  }
+  .modal-header h2{
+
+      margin: 10px auto;
+      font-weight: bold;
+  }
+  
+  .modal-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 2px 20px;
+      text-indent: 10px;
+      line-height: 1.3rem;
+      align-items: center;
+    }
+    .modal-body p{
+        width: calc(100% - 120px);
+    }
+    .modal-body .img-popup{
+       
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-bottom: 6px;
+        padding-right: 7px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .img-Modular{
+        background-image: url("../img/esquema_modular4.jpg");
+    }
+    .img-Controladores{
+        background-image: url("../img/impresora_fiscal1.jpg");
+    }
+    .img-Codigo{
+        background-image: url("../img/codigo_barras2.jpg");
+    }
+    .img-Facturas{
+        background-image: url("../img/factura_electronica1.jpg");
+    }
+    .modal-footer {
+        margin: 0;
+        margin-top: 17px;
+        padding: 0;
+        background-image: linear-gradient( -45deg,  rgba(96,221,142,0.7) 8.7%, rgba(24,138,141,0.7) 88.1% );
+        color: white;
+        height: 33px;
+
+      }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 30% auto;
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+    width: 60%;
+    min-width: 300px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animateleft;
+    animation-duration: 0.4s
+  }
+  
+  /* Animacion */
+  @keyframes animateleft {
+    from {left: -300px; opacity: 0}
+    to {left: 0; opacity: 1}
+  }
+  /* Boton de cerrar */
+
+  .close-modular,
+  .close-Controladores,
+  .close-codigo,
+  .close-facturas {
+    align-self: flex-start;
+    justify-self: flex-start;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-modular:hover,
+  .close-modular:focus,
+  .close-Controladores:hover,
+  .close-Controladores:focus,
+  .close-codigo:hover,
+  .close-codigo:focus,
+  .close-facturas:hover,
+  .close-facturas:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media (min-width: 1200px) {
+    .modal-content {
+        top: -25%;
+      }
+      
+    }
