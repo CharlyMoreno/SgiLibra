@@ -387,3 +387,28 @@ nav .nav-item__contacto{
       }
       
     }
+
+/* Frase background */
+
+.frase-background{
+    height: 200px;
+    position: relative;
+    background-image: linear-gradient( -45deg,  rgba(96,221,142,0.7) 8.7%, rgba(24,138,141,0.7) 88.1% ),url('../img/notebook.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.frase-background h2{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width:425px){
+    .frase-background h2{
+        font-size: 20px;
+    }
+}
